@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/coding/project/css/style.css">
+      <script type="text/javascript" src="../project/order page.js"></script>
+  </head>
+  <body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_logo"><p><a id="up">All about coffee</p></a></div>
+                <a name='abt'></a> <a class="navbar-logo" href="coffee.html"><img src="../project/images/icon.png" border="0" height='50'></a>
+                <nav class="nav">
+                    <a class="nav_link_active" href="/coding/project/coffee.html">Главная</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<div class="Order">
+    <h2>Форма заказа</h2>
+    <div class="...">
+        <form name="order_form"  action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>
+            <p>Ваше имя и фамилия: <input type="text" name="Order_Name" value="Андрей"> <input type="text" name="Order_Surname" value="Андронов"></p>
+            <p>Ваши контакты: Телефон: <input type="text" name="Guest_Contacts_Phone" value="+79257770077"> Почта: <input type="email" name="Guest_Contacts_Mail" value="coffeeshop@bean.ru"></p>
+            <p>Дата доставки: <input type="date" name="Date" value="14.12.2022"></p>
+            <p>Какой кофе Вы бы хотели приобрести?
+                <input id="classic" type="radio" checked name="country" value="classic" onclick="calc()">Классика
+                <input id="colombia" type="radio" name="country" value="colombia" onclick="calc()">Колумбия
+                <input id="peru" type="radio" name="country" value="peru" onclick="calc()">Перу
+                <input id="honduras" type="radio" name="country" value="honduras" onclick="calc()">Гондурас
+                <input id="all" type="radio" name="country" value="all" onclick="calc()">Все
+            </p>
+            <p>Количество упаковок: <input type="number" name="packs" value="1" min="1" onclick="calc()"> </p>
+            <p>Мы можем перемолоть кофе за Вас (200 р) <input id="ground" type="checkbox" name="ground" value="ground" onclick="calc()"></p>
+            <p>Дополнительная информация: <textarea name="Guest_Additionalinfo" rows=1 cols=70 >Здесь Вы можете оставить дополнительную информацию/пожелания о Вашем заказе</textarea></p>
+            <p>Конечная цена: <input type="text" name="Result"></p>
+            <p>
+                <input name="Reset" type="Reset" value="Обновить">
+                <input name="submit" type="Submit" value="Отправить">
+            </p>
+        </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+ <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Coffee</title>
+ </head>
+ <body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_logo"><p><a id="up">All about coffee</p></a></div>
+                <a name='abt'></a> <a class="navbar-logo" href="coffee.html"><img src="../project/images/icon.png" border="0" height='50'></a>
+                <nav class="nav">
+                    <a class="nav_link" href="/coding/project/coffee.html">Главная</a>
+                    <a class="nav_link" href="/coding/project/about_us.html">О нас</a>
+                    <a class="nav_link" href="/coding/project/season.html">Сезонные напитки</a>
+                    <a class="nav_link" href="/coding/project/review.html">Отзывы</a>
+                    <a class="nav_link_active" href="/coding/project/form.html">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <aside class="aside_season">
+        <div class="aside_text">
+         <p><a href="#up">Наверх</a></p>
+       </div>
+        </aside>
+
+        <p></p>
+        <p></p>
+        <div class="additional_questions" id="question_form">
+            <div class="q_insides">
+              <h2 id="form_review">Остались вопросы?</h2>
+              <p class="FAQ_font_form"><b>Напишите нам - мы свяжемся с вами!</b><p>
+              <div class="ask_a_question_form">
+              <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>
+                <p>Ваше имя и фамилия: <input type="text" name="Guest_Name" value="Андрей"> <input type="text" name="Guest_Surname" value="Андронов"></p>
+                <p>Дата отправки вопроса: <input type="date" name="Sending_Date" value="12.12.2022"></p>
+                <p>Ваш вопрос: <textarea cols=80 name="Guest_Question" rows=1 >Напишите Ваш вопрос,пожалуйста</textarea></p>
+                <p>Как нам с вами связаться? Телефон: <input type="text" name="Guest_Contacts_Phone" value="+79005672222"> Почта: <input type="email" name="Guest_Contacts_Mail" value="guest@bean.ru"></p>
+                <p>Дополнительная информация: <textarea name="Guest_Additionalinfo" rows=1 cols=70 >Здесь Вы можете оставить дополнительную инфомацию о себе</textarea></p>
+                 <p>
+                  <input name="Reset" type="Reset" value="Обновить">
+                  <input name="submit" type="Submit" value="Отправить">
+              </p>
+              </form>
+              </div>
+            </p>
+            </div>
+          </div>
+        
+          <div class="additional_questions" id="question_form">
+            <div class="q_insides">
+              <h2>Хотите присоединиться к нашей команде?</h2>
+              <p class="FAQ_font_form"><b>Расскажите о себе и мы пригласим Вас на личную встречу.</b><p>
+              <div class="ask_a_question_form">
+              <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>
+                <p>Ваше имя и фамилия: <input type="text" name="Guest_Name" value="Андрей"> <input type="text" name="Guest_Surname" value="Андронов"></p>
+                <p>Почему Вы хотите стать частью нашего коллектива? <textarea cols=80 name="Guest_CV" rows=1 >Расскажите нам о себе.</textarea></p>
+                <p>Как нам с вами связаться?</p> 
+                <ol>
+                    <li>Телефон: <input type="text" name="Guest_Contacts_Phone" value="+79005672222"></li>
+                    <li>Почта: <input type="email" name="Guest_Contacts_Mail" value="guest@bean.ru"></li>
+                </ol>
+                 <p>
+                  <input name="Reset" type="Reset" value="Обновить">
+                  <input name="submit" type="Submit" value="Отправить">
+              </p>
+              </form>
+              </div>
+            </p>
+            </div>
+          </div>
+
+    <footer id="down" class="footer">
+        <p><a id="contacts">Контакты: +79257770077 coffeeshop@bean.ru</p></a>
+      </footer>
+
+ </body>
+</html>

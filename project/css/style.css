@@ -1,0 +1,385 @@
+body {
+    background:lightgray;
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: black;
+}
+*, 
+* ::before,
+* ::after {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6  {
+    margin: 0;
+}
+/* Container */
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+}
+
+
+.intro_inner {
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+
+}
+
+/* Aside */
+
+.aside {
+    background-color: burlywood;
+    border-radius: 25px;
+    width: 360px;
+    height: 240px;
+    margin-right: 100px;
+    position: fixed;
+    float: right;
+    top: 120px;
+    right: -50px;
+    color: black;
+}
+
+.aside_season {
+  background-color: burlywood;
+  border-radius: 25px;
+  width: 360px;
+  height: 120px;
+  margin-right: 100px;
+  position: fixed;
+  float: right;
+  text-decoration: none;
+  top: 120px;
+  right: -50px;
+  color: black;
+}
+
+.aside_text {
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+  
+  .aside a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header */
+
+.header {
+    background-color: rgb(113, 87, 73);
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+.header_logo {
+    color: bisque;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Footer */
+
+.footer {
+    background-color: rgb(113, 87, 73);
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    height: 110px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    font-size: 20px;
+    color: bisque;
+  }
+  
+
+/* Nav */
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+
+    position: relative;
+
+    color: black;
+    text-decoration: none;
+    transform-origin: color 0.2s linear;
+}
+
+.nav_link:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    display: none;
+
+    background-color: bisque;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav_link:hover {
+    color: blanchedalmond;
+}
+
+.nav_link:hover:after {
+    display: block;
+}
+
+.nav_link_active {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  position: relative;
+
+  color: blanchedalmond;
+  text-decoration: none;
+}
+
+.nav_link_active:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  display: none;
+
+  background-color: bisque;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.nav_link_active:hover {
+  color: blanchedalmond;
+}
+
+.nav_link_active:hover:after {
+  display: block;
+}
+
+.navbar-logo {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* Table */
+
+.season_table{
+  width: 900px;
+  height: 910px;
+  border-radius: 25px;
+  padding-top: 20px;
+  margin-left: 100px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.table_text {
+  padding-left: 8px;
+  font-size: 14px;
+}
+
+.Table_header {
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+.Table_insides {
+  margin-left: 60px;
+}
+
+.season_table table {
+  background-image: url(/coding/project/images/bezshovnaya-tekstura-6.jpg);
+  width: 780px;
+}
+
+.season_table td {
+  background-color: lightgray;
+}
+
+.photo_center {
+  text-align: center;
+}
+
+/* About us */
+
+.about_us {
+    width: 1100px;
+    height: 124vh;
+    margin-left: 80px;
+    margin-bottom: 60px;
+    margin-top: 160px;
+    background-color:rgb(113, 87, 73);
+    border-radius: 25px;
+  }
+  
+  .about_us_text {
+    padding-left: 60px;
+    padding-top: 60px;
+    color: blanchedalmond;
+    font-weight: 200;
+    font-size: 16px;
+  }
+  
+  .about_us_text figure {
+    margin-left: 0;
+    padding-top: 20px;
+  }
+  
+  .about_us_text ul {
+    padding-left: 20px;
+  }
+  
+  .about_us_text a {
+    text-decoration: none;
+    color: black;
+    text-align: justify;
+    font-weight: 400;
+  }
+
+  .FAQ_font {
+    font-size: 20px;
+    color: blanchedalmond;
+  }
+
+  /* form and questions */
+
+  .questions{
+    width: 900px;
+    height: 940px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    margin-top: 160px;
+    background-color: lightgray;
+    border-radius: 25px;
+  }
+  
+  .q_insides{
+    padding-left: 60px;
+    padding-top: 40px;
+    width: 780px;
+  
+  }
+  
+  .additional_questions{
+    width: 900px;
+    height: 75vh;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    background-color: lightgray;
+    border-radius: 25px;
+  }
+  
+  .ask_a_question_form {
+   padding-top: 20px;
+   font-size: 20px;
+  }
+  
+  .FAQ_font_form {
+    font-size: 20px;
+    color: rgb(113, 87, 73);
+  }
+
+  /* Order */
+
+  body {
+    background-color: lightgray;
+    font-size: 20px;
+  }
+  
+  .Order {
+    width: 86%;
+    height: 910px;
+    background-color: lightgray;
+    border-radius: 25px;
+    padding-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+  
+  h2 {
+    margin-left: 80px;
+    margin-top: 40px;
+  }
+  
+  form {
+    margin-left: 80px;
+    margin-top: 50px;
+  }
+  
+
+  /* Review */
+
+  .review_1 {
+    width: 900px;
+    height: 260px;
+    margin-left: 100px;
+    margin-top: 160px;
+    margin-bottom: 60px;
+    background-color: lightgray;
+    border-radius: 25px;
+  }
+  
+  
+  .review_h2{
+     padding-left: 38px;
+     padding-top: 20px;
+  }
+  
